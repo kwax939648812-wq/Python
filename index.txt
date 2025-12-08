@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學習 GIT 指令 - 可愛活潑風格</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #ffcccb;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            color: #fff;
+            border-bottom: 5px solid #ff69b4;
+        }
+        .content {
+            padding: 30px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+        }
+        h2 {
+            color: #ff69b4;
+        }
+        .code-block {
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        footer {
+            background-color: #ffcccb;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            color: #333;
+        }
+        .download-btn {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #ff1493;
+        }
+        .emoji {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>學習 GIT 指令</div>
+    <p>讓我們一起變得更強大 💻✨</p>
+</header>
+
+<div class="content">
+    <div class="card">
+        <h2>ADD</h2>
+        <p>將檔案加入版本控制區，準備提交。</p>
+        <div class="code-block">
+            git add <span class="emoji">.</span>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>COMMIT</h2>
+        <p>將修改提交到本地版本庫。</p>
+        <div class="code-block">
+            git commit -m "你的提交訊息"
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>PUSH</h2>
+        <p>將本地的提交推送到遠端倉庫。</p>
+        <div class="code-block">
+            git push origin main
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>PULL</h2>
+        <p>從遠端倉庫拉取更新。</p>
+        <div class="code-block">
+            git pull origin main
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>REVERT</h2>
+        <p>撤銷某次提交，創建一個新的提交來逆轉它。</p>
+        <div class="code-block">
+            git revert <span class="emoji">[commit-hash]</span>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>CHECKOUT</h2>
+        <p>切換分支或還原檔案。</p>
+        <div class="code-block">
+            git checkout <span class="emoji">branch-name</span>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>MERGE</h2>
+        <p>將一個分支的變更合併到當前分支。</p>
+        <div class="code-block">
+            git merge <span class="emoji">branch-name</span>
+        </div>
+    </div>
+    
+    <div style="text-align: center;">
+        <button class="download-btn" onclick="downloadCode()">下載網頁語法</button>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 學習 GIT - 讓我們一起進步！</p>
+</footer>
+
+<script>
+    function downloadCode() {
+        const code = `
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學習 GIT 指令 - 可愛活潑風格</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #ffcccb;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            color: #fff;
+            border-bottom: 5px solid #ff69b4;
+        }
+        .content {
+            padding: 30px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+        }
+        h2 {
+            color: #ff69b4;
+        }
+        .code-block {
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        footer {
+            background-color: #ffcccb;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            color: #333;
+        }
+        .download-btn {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>學習 GIT 指令</div>
+    <p>讓我們一起變得更強大 💻✨</p>
+</header>
+
+<div class="content">
+    <div class="card">
+        <h2>ADD</h2>
+        <p>將檔案加入版本控制區，準備提交。</p>
+        <div class="code-block">
+            git add <span class="emoji">.</span>
+        </div>
+    </div>
+    <div class="card">
+        <h2>COMMIT</h2>
+        <p>將修改提交到本地版本庫。</p>
+        <div class="code-block">
+            git commit -m "你的提交訊息"
+        </div>
+    </div>
+    <div class="card">
+        <h2>PUSH</h2>
+        <p>將本地的提交推送到遠端倉庫。</p>
+        <div class="code-block">
+            git push origin main
+        </div>
+    </div>
+    <div class="card">
+        <h2>PULL</h2>
+        <p>從遠端倉庫拉取更新。</p>
+        <div class="code-block">
+            git pull origin main
+        </div>
+    </div>
+    <div class="card">
+        <h2>REVERT</
